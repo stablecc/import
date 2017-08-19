@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <empty></empty>
+    <emptyselfclose />
+    <content>something</content>
+    <attrib a1="attr1" a2="attr2"/>
+    <items>
+        <item>item1</item>
+        <item>item2</item>
+    </items>
+    <namespaces xmlns:a="ns1" xmlns:b="ns2">
+        <a:dup>adup</a:dup>
+        <b:dup>bdup</b:dup>
+    </namespaces>
+</root>
