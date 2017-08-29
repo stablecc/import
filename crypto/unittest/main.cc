@@ -18,7 +18,7 @@ RandomNumberGenerator & GlobalRNG()
 }
 
 TEST(Cryptocc_test, All) {
-    ASSERT_TRUE(ValidateAll(false));
+    ASSERT_TRUE(ValidateAll(true));     // parameter means "thorough"
 }
 
 int main(int argc, char**argv)
