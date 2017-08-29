@@ -26,8 +26,12 @@ int main(int argc, char**argv)
     std::string seed = IntToString(time(NULL));
     seed.resize(16, ' ');
 
+    cout << "Setting random seed: " << seed << "\n";
+
     OFB_Mode<AES>::Encryption& prng = dynamic_cast<OFB_Mode<AES>::Encryption&>(GlobalRNG());
 	prng.SetKeyWithIV((byte *)seed.data(), 16, (byte *)seed.data());
+
+    cout << "Register factories\n";
 
     RegisterFactories();
 
