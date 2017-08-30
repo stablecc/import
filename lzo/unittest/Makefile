@@ -4,7 +4,7 @@ BASE = ../../..
 
 NAME = lzo_test
 
-CPPFLAGS += -isystem ../lzo-2.10/include -I ../lzo-2.10
+CPPFLAGS += -I ../lzo-2.10
 
 SRCS = lzotest/lzotest.c
 

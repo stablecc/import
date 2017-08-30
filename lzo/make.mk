@@ -2,7 +2,7 @@
 
 BLDLIBS += $(BASE)/import/lzo
 
-CPPFLAGS += -I $(BASE)/import/lzo/lzo-2.10/include/lzo
+CPPFLAGS += -isystem $(BASE)/import/lzo/lzo-2.10/include
 
 ifeq ($(BLDTYPE),debug)
 LDFLAGS += -llzod
