@@ -4,7 +4,7 @@
 
 BLDLIBS += $(BASE)/import/googletest
 
-CPPFLAGS += -isystem $(BASE)/import/googletest/include -I $(BASE)/import/googletest
+CPPFLAGS += -isystem $(BASE)/import/googletest/include
 
 ifeq ($(BLDTYPE),debug)
 LDFLAGS += -lgtestd
